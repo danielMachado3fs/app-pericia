@@ -1,4 +1,11 @@
 <div class="sidebar_container">
-  <div class="menu_item"></div>
-  <div class="submenu_item"></div>
+  <section class="logotipo"></section>
+  <section class="menu_body">
+    <div class="menu_container">
+      <a 
+        *ngFor="let item of itensMenu"
+        [routerLink]="item?.route ?? null"
+      ></a>
+    </div>
+  </section>
 </div>
