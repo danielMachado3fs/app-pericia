@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidebarMenuItens, menuItensSidbar } from '../../../shared/types/sidebar-menu-itens';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  itensMenu = [];
+  itensMenu: SidebarMenuItens[] = menuItensSidbar;
   constructor() { }
 
   ngOnInit() {
